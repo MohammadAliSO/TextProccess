@@ -1,0 +1,70 @@
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\appsettings.Development.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\appsettings.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.exe
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.deps.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.runtimeconfig.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\ref\Asynchronous TextProcessing.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.pdb
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Asynchronous TextProcessing.xml
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Humanizer.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.Extensions.Hosting.WindowsServices.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Swashbuckle.AspNetCore.Newtonsoft.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.csproj.AssemblyReference.cache
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.AssemblyInfoInputs.cache
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.AssemblyInfo.cs
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.csproj.CoreCompileInputs.cache
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\staticwebassets.development.json
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\scopedcss\bundle\Asynchronous TextProcessing.styles.css
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.csproj.CopyComplete
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\ref\Asynchronous TextProcessing.dll
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.xml
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.pdb
+D:\Projects\Az DataBase\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Debug\net6.0\Asynchronous TextProcessing.genruntimeconfig.cache
