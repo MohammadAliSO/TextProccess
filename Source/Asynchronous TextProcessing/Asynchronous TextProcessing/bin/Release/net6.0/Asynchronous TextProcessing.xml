@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Asynchronous TextProcessing</name>
+    </assembly>
+    <members>
+        <member name="T:Asynchronous_TextProcessing.Models.ConfigModels">
+            <summary>
+            Model of all Configs
+            </summary>
+        </member>
+        <member name="P:Asynchronous_TextProcessing.Models.ConfigModels.ConnectionStrings">
+            <summary>
+            declare of Connection strings
+            </summary>
+        </member>
+        <member name="T:Asynchronous_TextProcessing.Models.ConnectionStringsModel">
+            <summary>
+            ConnectionStringsModel 
+            </summary>
+        </member>
+        <member name="P:Asynchronous_TextProcessing.Models.ConnectionStringsModel.DefaultConnection">
+            <summary>
+            declare of DefaultConnection
+            </summary>
+        </member>
+    </members>
+</doc>

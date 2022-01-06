@@ -1,0 +1,77 @@
+CREATE DATABASE  Tasks_DB;
+
+go
+
+USE Tasks_DB;
+
+go
+
+CREATE TABLE  Permission_t (
+  PermissionID BIGINT IDENTITY(0,1) NOT NULL,
+  Name VARCHAR(50),
+  Content VARCHAR(200) ,
+  CONSTRAINT PK_Permission_t PRIMARY KEY (PermissionID)
+) 
+
+
+go
+
+CREATE TABLE  User_t (
+  UserID BIGINT NOT NULL IDENTITY(0,1),
+  Name NVARCHAR(50)  NOT NULL,
+  UserName NVARCHAR(50)  NOT NULL,
+  Password VARCHAR(200)  NOT NULL,
+  CreateTime DATETIME,
+  CONSTRAINT PK_User_t PRIMARY KEY (UserID)
+)
+
+go
+
+CREATE TABLE UserPermission_t
+(
+    UserPermissionID BIGINT NOT NULL IDENTITY,
+    UserID BIGINT NOT NULL,
+    PermissionID BIGINT NOT NULL,
+    CONSTRAINT PK_UserPermission_t PRIMARY KEY (UserPermissionID),
+	CONSTRAINT FK_UserPermission_t_User_t FOREIGN KEY (UserID) REFERENCES User_t(UserID) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FK_UserPermission_t_Permission_t FOREIGN KEY (PermissionID) REFERENCES Permission_t (PermissionID) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+go
+
+CREATE TABLE Result_t
+(
+    ID BIGINT NOT NULL IDENTITY,
+    ResultData NVARCHAR(MAX) ,
+    StartProcessTime DATETIME,
+    EndProcessTime DATETIME,
+    Type TINYINT,
+    Status TINYINT,
+    Description NVARCHAR(2000),
+    CONSTRAINT PK_Result_t PRIMARY KEY (ID)
+
+);
+
+go
+
+CREATE TABLE Request_t
+(
+    ID BIGINT NOT NULL IDENTITY,
+    UserID BIGINT,
+    Name NVARCHAR(100)  NOT NULL,
+    RequestData NVARCHAR(MAX),
+   -- StartDateTime DATETIME,
+   -- EndDateTime DATETIME,
+    Type TINYINT DEFAULT 1 NOT NULL,
+    State TINYINT,
+    ResultID BIGINT,
+    CreateDateTime DATETIME DEFAULT GETDATE(),
+    Status TINYINT,
+    Description NVARCHAR(1000),
+    CONSTRAINT PK_Request_t PRIMARY KEY (ID),
+    CONSTRAINT FK_Request_t_Result_t FOREIGN KEY (ResultID) REFERENCES Result_t (ID) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT FK_Request_t_User_t FOREIGN KEY (UserID) REFERENCES User_t (UserID) ON DELETE CASCADE ON UPDATE CASCADE
+
+
+);
