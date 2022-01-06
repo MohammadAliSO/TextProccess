@@ -44,7 +44,7 @@ public class UserController : Controller
     {
         // get user id
         long uId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "GetUser")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.GetUser).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         //check USER PERMISSION
@@ -61,7 +61,7 @@ public class UserController : Controller
     {
         // get user id
         long uId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "GetUser")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.GetUser).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         //check USER PERMISSION
@@ -76,12 +76,30 @@ public class UserController : Controller
         
         return Json(users);
     }
+
+    [HttpGet]
+    public ActionResult RequestOfUser(long UserId)
+    {
+        // get user id
+        long uId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.RequestUser).ToString())?.PermissionId;
+        if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
+
+        //check USER PERMISSION
+        if (!_context.UserPermissionTs.Any(up => up.UserId == uId && up.PermissionId == PermissionID))
+            return Unauthorized(new BadRequestErrorModel { Error = "Permission is denied!" });
+
+        var reqs = _context.RequestTs.Where(r => r.UserId == UserId).Select(r=>new { r.Id ,r.State, r.Type, r.RequestData  ,r.ResultId});
+
+        return Json(reqs);
+    }
+
     [HttpPost]
     public ActionResult Add([FromBody] Models.UserModel req)
     {
         // get user id
         long uId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "AddUser")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.AddUser).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         //check USER PERMISSION
@@ -107,16 +125,15 @@ public class UserController : Controller
     {
         // get user id
         long uId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "DeleteUser")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.DeleteUser).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
-
         //check USER PERMISSION
         if (!_context.UserPermissionTs.Any(up => up.UserId == uId && up.PermissionId == PermissionID))
             return Unauthorized(new BadRequestErrorModel { Error = "Permission is denied!" });
 
         var user = _context.UserTs.FirstOrDefault(u => u.UserId == UserId);
         if (user is null) return NotFound(new BadRequestErrorModel { Error = "This no such User!" });
-
+        if(user.UserId==uId || user.UserId == 0) return BadRequest(new BadRequestErrorModel { Error = "You can not delete this user!" });
         _context.UserTs.Remove(user);
         _context.SaveChanges();
 

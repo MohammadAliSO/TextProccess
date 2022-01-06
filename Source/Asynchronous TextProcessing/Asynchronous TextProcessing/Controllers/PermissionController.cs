@@ -63,6 +63,7 @@ public class PermissionController : Controller
 
         UserPermissionT? up=_context.UserPermissionTs.FirstOrDefault(up => up.UserId == UserId && up.PermissionId == newPID);
         if (up is null) return BadRequest(new BadRequestErrorModel { Error = "This permission NOT exist for user!" });
+        if (up.UserId == uId || up.UserId == 0) return BadRequest(new BadRequestErrorModel { Error = "You can not delete  persmission for this user!" });
 
         _context.UserPermissionTs.Remove(up);
         _context.SaveChanges();

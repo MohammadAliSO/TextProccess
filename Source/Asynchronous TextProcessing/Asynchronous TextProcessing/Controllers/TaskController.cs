@@ -1,3 +1,4 @@
+using Asynchronous_TextProcessing.Classes;
 using Asynchronous_TextProcessing.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -52,7 +53,7 @@ public class TaskController : Controller
         // get uiser id
         long userId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
 
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "request")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.Request).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         //check USER PERMISSION
@@ -74,7 +75,8 @@ public class TaskController : Controller
         _context.SaveChanges();
 
         //call engine
-
+        PreProccess pre = new PreProccess();
+        pre.ExecuteAsync(req);
 
         return resReturn(req);
     }
@@ -83,7 +85,7 @@ public class TaskController : Controller
     public ActionResult CheckRequest(int id)
     {
         var userId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "result")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.Result).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         if (!_context.UserPermissionTs.Any(up => up.UserId == userId && up.PermissionId == PermissionID))
@@ -100,7 +102,7 @@ public class TaskController : Controller
     {
 
         var userId = _context.UserTs.FirstOrDefault(u => u.UserName == getUser()).UserId;
-        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == "result")?.PermissionId;
+        long? PermissionID = _context.PermissionTs.FirstOrDefault(p => p.Name.ToLower() == ((Permissiontype)Permissiontype.Result).ToString())?.PermissionId;
         if (PermissionID is null) return BadRequest(new BadRequestErrorModel { Error = "This no such Permission!" });
 
         if (!_context.UserPermissionTs.Any(up => up.UserId == userId && up.PermissionId == PermissionID))

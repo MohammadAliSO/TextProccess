@@ -19,6 +19,7 @@ public enum Permissiontype
     Request,
     Result,
     GetUser,
+    RequestUser,
     AddUser,
     DeleteUser,
     AddPermission,

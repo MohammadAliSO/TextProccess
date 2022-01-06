@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
+using System.Security.Claims;
 
 //parse appsettings.json  add to Models
 var baseAddress = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
@@ -74,28 +75,37 @@ builder.Services.AddScoped<IUserService, UserService>();
 var app = builder.Build();
 
 
-app.Use(async (context, next) =>
+app.Use(async (context, next ) =>
 {
     try
     {
-        switch (context.Request.Path)
-        {
-            //case "/api/Task/NewRequest":
-
-            //    break;
-            //case "/api/Task/CheckRequest":
-
-            //    break;
-            //case "/api/Task/Result":
-
-            //    break;
-            case "/":
-                context.Response.Redirect("/swagger/index.html");
-                break;
-            default:
-                break;
-        }
+       
+        //switch (context.Request.Path)
+        //{
+        //    case "/api/Permission/Add":
+        //       break;
+        //    case "/api/Permission/Delete":
+        //       break;
+        //    case "/api/Permission/GetPermissionsOfUser":
+        //       break;
+        //    case "/api/Task/NewRequest":
+        //       break;
+        //    case "/api/Task/CheckRequest":
+        //       break;
+        //    case "/api/Task/Result":
+        //       break;
+        //    case "/api/User/GetUser" or "/api/User/AllUsers":
+        //       break;
+        //    case "/api/User/Add":
+        //       break;
+        //    case "/api/User/Delete":
+        //       break;
+        //    default:
+        //        break;
+        //}
         await next().ConfigureAwait(false);
+        if (context.Request.Path == "/")
+            context.Response.Redirect("/swagger/index.html");
     }
     catch (Exception e)
     {
