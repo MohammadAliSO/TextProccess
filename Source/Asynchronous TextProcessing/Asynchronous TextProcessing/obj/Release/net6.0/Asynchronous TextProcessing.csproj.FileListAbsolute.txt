@@ -52,7 +52,6 @@ D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchro
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Release\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Release\net6.0\Asynchronous TextProcessing.csproj.AssemblyReference.cache
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Release\net6.0\Asynchronous TextProcessing.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Release\net6.0\Asynchronous TextProcessing.AssemblyInfoInputs.cache
 D:\Projects\Az DataBase\TextProccess\Source\Asynchronous TextProcessing\Asynchronous TextProcessing\obj\Release\net6.0\Asynchronous TextProcessing.AssemblyInfo.cs
